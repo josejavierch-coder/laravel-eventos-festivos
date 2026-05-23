@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Evento - Cumpleaños de Sofía Gómez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="event-page">
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">E</span>
+                <span class="logo-text">EventosFestivos</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#" class="active">Categorías</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-outline">Acceso Clientes</button>
+                <button class="btn btn-gradient">
+                    <i data-lucide="lock"></i>
+                    Panel de Administración
+                    <i data-lucide="lock"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="event-header">
+            <div class="event-header-icon">
+                <i data-lucide="party-popper"></i>
+            </div>
+            <div class="event-header-info">
+                <h1>Detalles del Evento: Cumpleaños de Sofía Gómez</h1>
+                <p>15 de Julio, 2026 | Salón Sol | Temática Glamour</p>
+            </div>
+        </section>
+
+        <section class="event-details-grid">
+            <!-- Sidebar (Left) -->
+            <div class="sidebar">
+                <div class="detail-card summary-card">
+                    <h2>Resumen y Comentarios</h2>
+                    <p class="summary-text">Una celebración mágica llena de risas y alegría. El tema Glamour fue un éxito.</p>
+                    
+                    <div class="comment-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sofía" class="comment-avatar">
+                        <div class="comment-content">
+                            <h4>Comentarios de Sofía</h4>
+                            <p>¡El mejor cumpleaños de mi vida! Gracias por todo el apoyo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-card key-data-card" style="margin-top: 30px;">
+                    <h2>Datos Clave</h2>
+                    <div class="key-data-grid">
+                        <div class="key-data-item">
+                            <i data-lucide="users"></i>
+                            <span>50</span>
+                            <p>Invitados</p>
+                        </div>
+                        <div class="key-data-item">
+                            <i data-lucide="disc"></i>
+                            <span>DJ</span>
+                            <p>Set List</p>
+                        </div>
+                        <div class="key-data-item">
+                            <i data-lucide="cake"></i>
+                            <span>Tarta</span>
+                            <p>Astronómica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content (Right) -->
+            <div class="main-content">
+                <div class="detail-card gallery-card">
+                    <h2>Galería Multimedia</h2>
+                    
+                    <div class="gallery-carousel">
+                        <button class="carousel-nav prev">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        
+                        <div class="featured-video">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Video">
+                            <div class="play-overlay">
+                                <i data-lucide="play" fill="currentColor"></i>
+                            </div>
+                            <div style="position: absolute; bottom: 10px; left: 10px; color: white; font-weight: 600; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                                Video Destacado: El Gran Vals
+                            </div>
+                        </div>
+
+                        <div class="gallery-side-img">
+                            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=400&q=80" alt="Tarta">
+                            <div style="position: absolute; bottom: 10px; left: 10px; color: #333; font-weight: 600; background: rgba(255,255,255,0.8); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">
+                                La Tarta Glamour
+                            </div>
+                        </div>
+
+                        <div class="gallery-side-img">
+                            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=400&q=80" alt="Amigos">
+                            <div style="position: absolute; bottom: 10px; left: 10px; color: #333; font-weight: 600; background: rgba(255,255,255,0.8); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">
+                                Amigos Reuniéndose
+                            </div>
+                        </div>
+
+                        <button class="carousel-nav next">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-teal">
+                                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=200&q=80" alt="Preparativos">
+                            </div>
+                            <p>Preparativos</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-orange">
+                                <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=200&q=80" alt="Decoración">
+                            </div>
+                            <p>Decoración</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-blue">
+                                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=200&q=80" alt="PreparatPapá">
+                            </div>
+                            <p>PreparatPapá</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-pink">
+                                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=200&q=80" alt="Sorpresas">
+                            </div>
+                            <p>Sorpresas</p>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-orange">
+                                <img src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?auto=format&fit=crop&w=200&q=80" alt="Sorpresas">
+                            </div>
+                            <p>Sorpresas</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-pink">
+                                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=200&q=80" alt="Sorpresas">
+                            </div>
+                            <p>Sorpresas</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-teal">
+                                <img src="https://images.unsplash.com/photo-1514525253361-bee8718a300c?auto=format&fit=crop&w=200&q=80" alt="Sorpresas">
+                            </div>
+                            <p>Sorpresas</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-thumb border-blue">
+                                <img src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?auto=format&fit=crop&w=200&q=80" alt="Sorpresas">
+                            </div>
+                            <p>Sorpresas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

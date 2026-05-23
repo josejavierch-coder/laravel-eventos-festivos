@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cumpleaños - EventosFestivos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-icon" style="background: white; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">E</span>
+            <span class="logo-text">EventosFestivos</span>
+        </div>
+        
+        <button class="sidebar-admin-btn">
+            <i data-lucide="lock"></i>
+            Administración
+        </button>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a></li>
+                <li><a href="cumpleaños.html" class="active"><i data-lucide="party-popper"></i> Cumpleaños</a></li>
+                <li><a href="#"><i data-lucide="heart"></i> Matrimonios</a></li>
+                <li><a href="#"><i data-lucide="waves"></i> Bautizos</a></li>
+                <li><a href="#"><i data-lucide="music"></i> Solo Fiestas</a></li>
+                <li><a href="#"><i data-lucide="users"></i> Clientes</a></li>
+                <li><a href="#"><i data-lucide="bar-chart-3"></i> Reportes</a></li>
+                <li><a href="#"><i data-lucide="settings"></i> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <header class="dashboard-header">
+            <h1>Gestión de Cumpleaños</h1>
+            <div class="header-user-actions">
+                <div class="notification-bell">
+                    <i data-lucide="bell"></i>
+                </div>
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="User" class="user-profile-thumb">
+            </div>
+        </header>
+
+        <div class="management-header">
+            <h2 style="font-size: 1.8rem; font-weight: 700;">Cumpleaños</h2>
+            <div class="total-badge">Total Cumpleaños: 184</div>
+        </div>
+
+        <div class="action-bar">
+            <div class="search-container">
+                <i data-lucide="search"></i>
+                <input type="text" placeholder="Buscar cumpleaños por nombre, fecha o temática...">
+            </div>
+            <button class="btn btn-secondary">
+                <i data-lucide="printer"></i>
+                Imprimir Listado
+            </button>
+            <button class="btn btn-success" title="Nuevo Evento">
+                <i data-lucide="plus"></i>
+                Registrar Nuevo Cumpleaños
+            </button>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Card 1: Sofía Gómez -->
+            <div class="birthday-card">
+                <div class="card-top">
+                    <div class="status-indicator">
+                        <div class="status-icon active"><i data-lucide="party-popper"></i></div>
+                        <span class="status-label active">Active</span>
+                    </div>
+                    <div class="card-actions-menu">
+                        <i data-lucide="more-vertical" class="menu-trigger"></i>
+                        <div class="card-dropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">Ver Detalles <i data-lucide="chevron-down" style="width: 12px;"></i></a></li>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Cancelar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>Sofía Gómez</h3>
+                <div class="card-info-item"><i data-lucide="calendar"></i> 15 Jul 2026</div>
+                <div class="card-info-item"><i data-lucide="map-pin"></i> Salón Sol</div>
+                <div class="card-theme">Temática: Glamour</div>
+                <div class="trash-btn"><i data-lucide="trash-2"></i></div>
+            </div>
+
+            <!-- Card 2: Mateo Torres -->
+            <div class="birthday-card">
+                <div class="card-top">
+                    <div class="status-indicator">
+                        <div class="status-icon pending"><i data-lucide="alert-circle"></i></div>
+                        <span class="status-label pending">Pending</span>
+                    </div>
+                    <div class="card-actions-menu">
+                        <i data-lucide="more-vertical" class="menu-trigger"></i>
+                        <div class="card-dropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">Ver Detalles <i data-lucide="chevron-down" style="width: 12px;"></i></a></li>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Cancelar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>Mateo Torres</h3>
+                <div class="card-info-item"><i data-lucide="calendar"></i> 02 Aug Mayo, 2026</div>
+                <div class="card-info-item"><i data-lucide="map-pin"></i> Jardín Estrella</div>
+                <div class="card-theme">Temática: Superhéroes</div>
+                <div class="trash-btn"><i data-lucide="trash-2"></i></div>
+            </div>
+
+            <!-- Card 3: Laura Díaz -->
+            <div class="birthday-card">
+                <div class="card-top">
+                    <div class="status-indicator">
+                        <div class="status-icon active"><i data-lucide="party-popper"></i></div>
+                        <span class="status-label active">Active</span>
+                    </div>
+                    <div class="card-actions-menu">
+                        <i data-lucide="more-vertical" class="menu-trigger"></i>
+                        <div class="card-dropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">Ver Detalles <i data-lucide="chevron-down" style="width: 12px;"></i></a></li>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Cancelar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>Laura Díaz</h3>
+                <div class="card-info-item"><i data-lucide="calendar"></i> 22 Oct Mayo, 2026</div>
+                <div class="card-info-item"><i data-lucide="map-pin"></i> Salón Cometas</div>
+                <div class="card-theme">Temática: Princesas</div>
+                <div class="trash-btn"><i data-lucide="trash-2"></i></div>
+            </div>
+
+            <!-- Card 4: Juan Pérez -->
+            <div class="birthday-card">
+                <div class="card-top">
+                    <div class="status-indicator">
+                        <div class="status-icon active"><i data-lucide="party-popper"></i></div>
+                    </div>
+                    <div class="card-actions-menu">
+                        <i data-lucide="more-vertical" class="menu-trigger"></i>
+                        <div class="card-dropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">Ver Detalles <i data-lucide="chevron-down" style="width: 12px;"></i></a></li>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Cancelar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>Juan Pérez</h3>
+                <div class="card-info-item"><i data-lucide="calendar"></i> 25 de Mayo, 2026</div>
+                <div class="card-info-item"><i data-lucide="map-pin"></i> Salón Luna</div>
+                <div class="card-theme">Temática: Glamour</div>
+                <div class="trash-btn"><i data-lucide="trash-2"></i></div>
+            </div>
+
+            <!-- Card 5: Pending Generic -->
+            <div class="birthday-card">
+                <div class="card-top">
+                    <div class="status-indicator">
+                        <div class="status-icon pending"><i data-lucide="alert-circle"></i></div>
+                        <span class="status-label pending">Pending</span>
+                    </div>
+                    <div class="card-actions-menu">
+                        <i data-lucide="more-vertical" class="menu-trigger"></i>
+                        <div class="card-dropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">Ver Detalles <i data-lucide="chevron-down" style="width: 12px;"></i></a></li>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Cancelar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info-item" style="margin-top: 50px;"><i data-lucide="calendar"></i> 25 de Mayo, 2026</div>
+                <div class="card-info-item"><i data-lucide="map-pin"></i> Salón Luna</div>
+                <div class="card-theme">Temática: Conta</div>
+                <div class="trash-btn"><i data-lucide="trash-2"></i></div>
+            </div>
+
+            <!-- Card 6: Camúmtos -->
+            <div class="birthday-card">
+                <div class="card-top">
+                    <div class="status-indicator">
+                        <div class="status-icon active"><i data-lucide="party-popper"></i></div>
+                    </div>
+                    <div class="card-actions-menu">
+                        <i data-lucide="more-vertical" class="menu-trigger"></i>
+                        <div class="card-dropdown" style="display: none;">
+                            <ul>
+                                <li><a href="#">Ver Detalles <i data-lucide="chevron-down" style="width: 12px;"></i></a></li>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Cancelar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>Camúmtos</h3>
+                <div class="card-info-item"><i data-lucide="calendar"></i> 25 de Mayo, 2026</div>
+                <div class="card-info-item"><i data-lucide="map-pin"></i> Salón Luna</div>
+                <div class="card-theme">Temática: Princesas</div>
+                <div class="trash-btn"><i data-lucide="trash-2"></i></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

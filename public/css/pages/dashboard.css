@@ -1,0 +1,62 @@
+.dashboard-body {
+    background-color: #f4f7fa;
+    display: flex;
+    min-height: 100vh;
+}
+
+.dashboard-main {
+    flex: 1;
+    margin-left: 260px;
+    padding: 30px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.chart-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.chart-card.span-2 {
+    grid-column: span 2;
+}
+
+.chart-container {
+    height: 300px;
+    position: relative;
+}
+
+.event-list-card {
+    grid-column: span 2;
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.action-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}

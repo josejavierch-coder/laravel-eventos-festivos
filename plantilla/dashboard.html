@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - EventosFestivos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-icon" style="background: white; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">E</span>
+            <span class="logo-text">EventosFestivos</span>
+        </div>
+        
+        <button class="sidebar-admin-btn">
+            <i data-lucide="lock"></i>
+            Administración
+        </button>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#" class="active"><i data-lucide="layout-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i data-lucide="party-popper"></i> Cumpleaños</a></li>
+                <li><a href="#"><i data-lucide="heart"></i> Matrimonios</a></li>
+                <li><a href="#"><i data-lucide="waves"></i> Bautizos</a></li>
+                <li><a href="#"><i data-lucide="music"></i> Solo Fiestas</a></li>
+                <li><a href="#"><i data-lucide="users"></i> Clientes</a></li>
+                <li><a href="#"><i data-lucide="bar-chart-3"></i> Reportes</a></li>
+                <li><a href="#"><i data-lucide="settings"></i> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <header class="dashboard-header">
+            <h1>Panel de Control</h1>
+            <div class="header-user-actions">
+                <div class="notification-bell">
+                    <i data-lucide="bell"></i>
+                </div>
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="User" class="user-profile-thumb">
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Stat Cards -->
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Total Eventos Registrados</h3>
+                    <div class="stat-value">1,245</div>
+                </div>
+                <div class="stat-mini-chart">
+                    <svg viewBox="0 0 100 50" style="width: 100%; height: 100%;">
+                        <path d="M0,45 Q20,35 40,40 T80,15 T100,10" fill="none" stroke="#26ba9d" stroke-width="3" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Usuarios Activos</h3>
+                    <div class="stat-value">430</div>
+                </div>
+                <div class="stat-mini-chart">
+                    <div style="display: flex; align-items: flex-end; gap: 4px; height: 30px;">
+                        <div style="width: 6px; height: 15px; background: #3498db; border-radius: 3px;"></div>
+                        <div style="width: 6px; height: 25px; background: #3498db; border-radius: 3px;"></div>
+                        <div style="width: 6px; height: 10px; background: #3498db; border-radius: 3px;"></div>
+                        <div style="width: 6px; height: 20px; background: #3498db; border-radius: 3px;"></div>
+                        <div style="width: 6px; height: 18px; background: #3498db; border-radius: 3px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Eventos Pendientes</h3>
+                    <div class="stat-value">52</div>
+                </div>
+            </div>
+
+            <!-- Charts Row 1 -->
+            <div class="chart-card span-2">
+                <h2>Comparación de Reservas Mensuales (Cumpleaños vs. Matrimonios)</h2>
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h2>Distribución de Eventos por Tipo (Más Solicitado)</h2>
+                <div class="chart-container">
+                    <canvas id="donutChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Charts Row 2 -->
+            <div class="chart-card event-list-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h2>Últimos Eventos Registrados</h2>
+                    <i data-lucide="more-horizontal" style="color: #ccc; cursor: pointer;"></i>
+                </div>
+                <table class="event-table">
+                    <tr>
+                        <td>
+                            <div style="display: flex; align-items: center;">
+                                <div class="event-indicator" style="background: #26ba9d;"></div>
+                                <div>
+                                    <strong>15 Años Sofía</strong><br>
+                                    <span class="event-meta">06 May 2023</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="event-meta">Evento details</td>
+                        <td class="event-meta">Solas sofía</td>
+                        <td><span class="status-tag">Status</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display: flex; align-items: center;">
+                                <div class="event-indicator" style="background: #ff8a65;"></div>
+                                <div>
+                                    <strong>Boda Ana & Luis</strong><br>
+                                    <span class="event-meta">27 May 2023</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="event-meta">Evento details</td>
+                        <td class="event-meta">Solas sofía</td>
+                        <td><span class="status-tag">Status</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display: flex; align-items: center;">
+                                <div class="event-indicator" style="background: #3498db;"></div>
+                                <div>
+                                    <strong>Bautizo Mateo</strong><br>
+                                    <span class="event-meta">29 May 2023</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="event-meta">Evento details</td>
+                        <td class="event-meta">Solas sofía</td>
+                        <td><span class="status-tag">Status</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="chart-card">
+                <h2>Eficiencia de RSVP: Confirmación Promedio</h2>
+                <div class="chart-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="position: relative; width: 200px; height: 100px;">
+                        <canvas id="gaugeChart"></canvas>
+                        <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); text-align: center;">
+                            <span style="font-size: 2rem; font-weight: 700;">88%</span>
+                            <div style="color: var(--color-teal); font-size: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i data-lucide="arrow-up" style="width: 16px; height: 16px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.login-footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: #a0aec0;
+    font-size: 0.85rem;
+}

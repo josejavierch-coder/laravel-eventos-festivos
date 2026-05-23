@@ -1,0 +1,12 @@
+:root {
+    --color-teal: #26ba9d;
+    --color-orange: #e67e22;
+    --color-blue: #3498db;
+    --color-pink: #c02882;
+    --color-text-dark: #1a1a1a;
+    --color-text-light: #666666;
+    --color-bg-light: #fdfdfd;
+    --font-main: 'Inter', sans-serif;
+    --container-width: 1200px;
+    --header-height: 80px;
+}

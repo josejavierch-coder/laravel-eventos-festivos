@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventosFestivos - Explora Tus Celebraciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">E</span>
+                <span class="logo-text">EventosFestivos</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#" class="active">Categorías</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-outline">Acceso Clientes</button>
+                <button class="btn btn-gradient">
+                    <i data-lucide="lock"></i>
+                    Panel de Administración
+                    <i data-lucide="lock"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Explora Tus Celebraciones</h1>
+                
+                <div class="category-grid">
+                    <!-- Cumpleaños -->
+                    <div class="category-card card-teal">
+                        <div class="card-icon">
+                            <i data-lucide="party-popper"></i>
+                        </div>
+                        <h3>Cumpleaños</h3>
+                        <p>Fiestas temáticas, tortas y diversión para todas las edades.</p>
+                        <button class="btn btn-card">Planificar Cumple</button>
+                    </div>
+
+                    <!-- Matrimonios -->
+                    <div class="category-card card-orange">
+                        <div class="card-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h3>Matrimonios</h3>
+                        <p>Bodas de ensueño, catering exclusivo y momentos mágicos.</p>
+                        <button class="btn btn-card">Organizar Boda</button>
+                    </div>
+
+                    <!-- Bautizos -->
+                    <div class="category-card card-blue">
+                        <div class="card-icon">
+                            <i data-lucide="waves"></i>
+                        </div>
+                        <h3>Bautizos</h3>
+                        <p>Ceremonias íntimas, recuerdos especiales y ambiente familiar.</p>
+                        <button class="btn btn-card">Detallar Bautizo</button>
+                    </div>
+
+                    <!-- Solo Fiestas -->
+                    <div class="category-card card-pink">
+                        <div class="card-icon">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <h3>Solo Fiestas</h3>
+                        <p>Eventos corporativos, aniversarios y noches de baile.</p>
+                        <button class="btn btn-card">Lanzar Fiesta</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Próximos Próximos | Próximos Próximos</h2>
+                <div class="events-carousel">
+                    <button class="carousel-nav prev">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=400&q=80" alt="15 Años de Sofía">
+                            </div>
+                            <div class="event-info">
+                                <h4>15 Años de Sofía</h4>
+                                <p><i data-lucide="calendar"></i> 06 May 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80" alt="Boda Ana & Luis">
+                            </div>
+                            <div class="event-info">
+                                <h4>Boda Ana & Luis</h4>
+                                <p><i data-lucide="calendar"></i> 27 May 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=400&q=80" alt="Boda Ana & Luis">
+                            </div>
+                            <div class="event-info">
+                                <h4>Boda Ana & Luis</h4>
+                                <p><i data-lucide="calendar"></i> 29 May 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=400&q=80" alt="15 Años de Sofía">
+                            </div>
+                            <div class="event-info">
+                                <h4>15 Años de Sofía</h4>
+                                <p><i data-lucide="calendar"></i> 26 May 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-nav next">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
